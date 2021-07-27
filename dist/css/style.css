@@ -94,6 +94,8 @@ h6 {
 
 /* 1. Header */
 
+/* 2. Preview */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -233,10 +235,18 @@ body {
 
 .btn {
   display: inline-block;
+  font-family: 'Roboto', sans-serif;
   padding: 15px 30px;
   color: #fff;
   border-radius: 5px;
   background-color: #1B75BB;
+}
+
+.btn--nav {
+  font-family: 'Gelasio', sans-serif;
+  font-size: calc(13px + 3 * ((100vw - 320px) / 1280));
+  font-weight: 500;
+  line-height: 24px;
 }
 
 .title--blue {
@@ -269,4 +279,81 @@ body {
   line-height: 160%;
   color: #081F32;
   opacity: 0.6;
+}
+
+/* 2. Preview */
+
+.preview {
+  margin: 200px 0 0 0;
+}
+
+.preview .container {
+  position: relative;
+}
+
+.preview .container .preview__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.preview__video {
+  position: relative;
+  margin: 0 98px 0 0;
+}
+
+.preview__video .background-img {
+  position: relative;
+}
+
+.preview__video .background-img img {
+  margin: 0 0 0 97px;
+}
+
+.preview__video .background-img .video {
+  position: absolute;
+  top: 43px;
+  right: 43px;
+  z-index: 10;
+}
+
+.preview__video .bg__square {
+  position: absolute;
+  top: 200px;
+  left: -200px;
+}
+
+.preview__title {
+  font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
+}
+
+.preview .video__wrapper {
+  position: relative;
+}
+
+.preview .video__wrapper .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #FFFFFF;
+}
+
+.preview .video__wrapper .triangle {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  -webkit-transform: translate(-70%, -50%);
+      -ms-transform: translate(-70%, -50%);
+          transform: translate(-70%, -50%);
+  border: 20px solid transparent;
+  border-left: 20px solid #1B75BB;
 }
