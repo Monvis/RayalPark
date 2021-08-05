@@ -6,6 +6,7 @@
 /* -------------------------------------------------------------------- */
 /* 1. Header */
 /* 2. Preview */
+/* 3. Why you choose us */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -215,10 +216,8 @@ body {
             position: absolute;
             top: 200px;
             left: -200px;
+            opacity: 0.5;
         }
-    }
-
-    &__text {
     }
 
     &__title {
@@ -229,6 +228,12 @@ body {
 
         &__wrapper {
             position: relative;
+
+            .video__main {
+                width: 625px;
+                height: 325px;
+                object-fit: cover;
+            }
 
             .circle {
                 position: absolute;
@@ -249,6 +254,65 @@ body {
                 border: 20px solid transparent;
                 border-left: 20px solid #1B75BB;
             }
+        }
+    }
+}
+
+/* 3. Why you choose us */
+
+.choose {
+    margin: 254px 0 0 0;
+
+    &__header {
+        margin: 0 0 60px 0;
+        text-align: center;
+    }
+
+    &__title {
+        @include adaptive-font(32, 20);
+    }
+
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        max-width: 819px;
+        margin: 0 auto;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 21px 17px 17.60px;
+        max-width: 262px;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
+        border-radius: 5px;
+    }
+
+    &__img {
+        margin: 0 0 40px 0;
+    }
+
+    &__info {
+
+        .title {
+            margin: 0 0 15px 0;
+        }
+
+        .text {
+            font-family: 'Roboto', sans-serif;
+            margin-bottom: 0;
+        }
+
+        .size--24 {
+            @include adaptive-font(24, 18);
+        }
+
+        .text--width {
+            max-width: 228px;
         }
     }
 }

@@ -8,6 +8,7 @@ let path = {
         js: project_folder + "/source/js/",
         fonts: project_folder + "/fonts/",
         img: project_folder + "/img/",
+        video: project_folder + "/video/",
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
@@ -15,12 +16,14 @@ let path = {
         js: source_folder + "/source/js/script.js",
         fonts: source_folder + "/fonts/*.ttf",
         img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        video: source_folder + "/video/**/*.mp4",
     },
     watch: {
         html: source_folder + "/**/*.html",
         css: source_folder + "/source/scss/**/*.scss",
         js: source_folder + "/source/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg, png, svg, gif, ico, webp}",
+        video: source_folder + "/video/**/*.mp4",
     },
     clean: "./" + project_folder + "/"
 }
@@ -53,6 +56,12 @@ function html(params) {
     return src(path.src.html)
     .pipe(fileinclude())
     .pipe(dest(path.build.html))
+    .pipe(browsersync.stream())
+}
+
+function videos(params) {
+    return src(path.src.video)
+    .pipe(dest(path.build.video))
     .pipe(browsersync.stream())
 }
 
@@ -117,10 +126,11 @@ function clean(params) {
     return del(path.clean);
 }
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, videos));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
-exports.images = images; 
+exports.images = images;
+exports.videos = videos;
 exports.js = js;
 exports.css = css;
 exports.html = html;

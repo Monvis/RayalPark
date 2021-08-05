@@ -96,6 +96,8 @@ h6 {
 
 /* 2. Preview */
 
+/* 3. Why you choose us */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -324,6 +326,7 @@ body {
   position: absolute;
   top: 200px;
   left: -200px;
+  opacity: 0.5;
 }
 
 .preview__title {
@@ -332,6 +335,13 @@ body {
 
 .preview .video__wrapper {
   position: relative;
+}
+
+.preview .video__wrapper .video__main {
+  width: 625px;
+  height: 325px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .preview .video__wrapper .circle {
@@ -356,4 +366,65 @@ body {
           transform: translate(-70%, -50%);
   border: 20px solid transparent;
   border-left: 20px solid #1B75BB;
+}
+
+/* 3. Why you choose us */
+
+.choose {
+  margin: 254px 0 0 0;
+}
+
+.choose__header {
+  margin: 0 0 60px 0;
+  text-align: center;
+}
+
+.choose__title {
+  font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
+}
+
+.choose__text {
+  font-family: 'Roboto', sans-serif;
+  max-width: 819px;
+  margin: 0 auto;
+}
+
+.choose__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.choose__item {
+  padding: 21px 17px 17.60px;
+  max-width: 262px;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
+          box-shadow: 0px 4px 30px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+}
+
+.choose__img {
+  margin: 0 0 40px 0;
+}
+
+.choose__info .title {
+  margin: 0 0 15px 0;
+}
+
+.choose__info .text {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 0;
+}
+
+.choose__info .size--24 {
+  font-size: calc(18px + 6 * ((100vw - 320px) / 1280));
+}
+
+.choose__info .text--width {
+  max-width: 228px;
 }
