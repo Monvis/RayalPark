@@ -98,6 +98,8 @@ h6 {
 
 /* 3. Why you choose us */
 
+/* 4. About hotel gallery */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -427,4 +429,119 @@ body {
 
 .choose__info .text--width {
   max-width: 228px;
+}
+
+/* 4. About hotel gallery */
+
+.rooms {
+  margin: 140px 0 0 0;
+}
+
+.rooms__item {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.rooms__item:nth-child(odd) {
+  margin: 0 30px 0 0;
+}
+
+.rooms__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin: 0 0 30px 0;
+}
+
+.rooms__wrapper:last-child {
+  margin: 0;
+}
+
+.rooms__img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.rooms__info {
+  padding: 23px 28px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: rgba(226, 226, 226, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 10px;
+}
+
+.rooms__type {
+  margin: 0 25px 0 0;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1280));
+  font-weight: 500;
+  line-height: 29px;
+  text-align: left;
+}
+
+.rooms__price {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.rooms__price span {
+  font-size: calc(10px + 2 * ((100vw - 320px) / 1280));
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.rooms__wrapper-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 10px 0;
+}
+
+.rooms__btn {
+  font-size: calc(11px + 3 * ((100vw - 320px) / 1280));
+  font-family: 'Gelasio', serif;
+  padding: 10px 20px;
+  line-height: 21px;
+}
+
+.rooms .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.rooms .title {
+  font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
+}
+
+.rooms .text {
+  font-family: 'Roboto', sans-serif;
+  max-width: 439px;
 }

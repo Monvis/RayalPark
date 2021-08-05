@@ -7,6 +7,7 @@
 /* 1. Header */
 /* 2. Preview */
 /* 3. Why you choose us */
+/* 4. About hotel gallery */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -314,5 +315,106 @@ body {
         .text--width {
             max-width: 228px;
         }
+    }
+}
+
+/* 4. About hotel gallery */
+
+.rooms {
+    margin: 140px 0 0 0;;
+
+    &__item {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        &:nth-child(odd) {
+            margin: 0 30px 0 0;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0 0 30px 0;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &__img {
+        border-radius: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__preview {
+    }
+
+    &__preview-wrapper {
+    }
+
+    &__info {
+        padding: 23px 28px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: rgba(226, 226, 226, 0.4);
+        backdrop-filter: blur(10px);
+        border-radius: 10px;
+    }
+
+    &__type {
+        margin: 0 25px 0 0;
+        @include adaptive-font(18, 14);
+        font-weight: 500;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    &__price {
+        font-family: 'Roboto', sans-serif;
+        @include adaptive-font(14, 12);
+        font-weight: 500;
+        line-height: 22px;
+
+        span {
+            @include adaptive-font(12, 10);
+            font-weight: 400;
+            line-height: 19px;
+        }
+    }
+
+    &__wrapper-inner {
+        display: flex;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    &__btn {
+        @include adaptive-font(14, 11);
+        font-family: 'Gelasio', serif;
+        padding: 10px 20px;
+        line-height: 21px;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        flex: 0 1 50%
+    }
+
+    .title {
+        @include adaptive-font(32, 20);
+    }
+
+    .text {
+        font-family: 'Roboto', sans-serif;
+        max-width: 439px;
     }
 }
