@@ -104,6 +104,8 @@ h6 {
 
 /* 5.1 Slick slider */
 
+/* 6. Notify */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -554,7 +556,6 @@ body {
 
 .reviwes {
   margin: 140px 0 0 0;
-  padding: 0 0 140px 0;
 }
 
 .reviwes__header {
@@ -691,4 +692,83 @@ body {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   background: #E5E5E5;
+}
+
+/* 6. Notify */
+
+.notify {
+  margin: 140px 0 0 0;
+  padding: 0 0 140px 0;
+}
+
+.notify__header {
+  text-align: center;
+}
+
+.notify__title {
+  font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
+  margin: 0 0 50px 0;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.notify__body {
+  text-align: center;
+}
+
+.secondary--title {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+  margin: 0 0 20px 0;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+}
+
+.form {
+  max-width: 569px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form__input {
+  width: 100%;
+  padding: 18.5px 80px 18.5px 30px;
+  border-radius: 5px;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.form__input::-moz-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.form__input::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+.form__btn {
+  position: relative;
+  right: 8px;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 40px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #1B75BB;
 }

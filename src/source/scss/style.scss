@@ -10,6 +10,7 @@
 /* 4. About hotel gallery */
 /* 5. Reviwes */
     /* 5.1 Slick slider */
+/* 6. Notify */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -419,7 +420,6 @@ body {
 
 .reviwes {
     margin: 140px 0 0 0;
-    padding: 0 0 140px 0; //timer
 
     &__wrapper {
     }
@@ -592,4 +592,77 @@ body {
 }
 
 .slick-dots li button {
+}
+
+/* 6. Notify */
+
+.notify {
+    margin: 140px 0 0 0;
+    padding: 0 0 140px 0; //timer
+
+    &__header {
+        text-align: center;
+    }
+
+    &__title {
+        @include adaptive-font(32, 20);
+        margin: 0 0 50px 0;
+        font-weight: 500;
+        line-height: 45px;
+    }
+
+    &__body {
+        text-align: center;
+    }
+}
+
+.secondary--title {
+    font-family: 'Roboto', sans-serif;
+    @include adaptive-font(20, 16);
+    margin: 0 0 20px 0;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+}
+
+.form {
+    max-width: 569px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        width: 100%;
+        padding: 18.5px 80px 18.5px 30px;
+        border-radius: 5px;
+
+        &::-webkit-input-placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+
+	    &::-moz-placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+
+	    &::-ms-input-placeholder {
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+        }
+    }
+
+    &__btn {
+        position: relative;
+        right: 8px;
+        font-family: 'Poppins', sans-serif;
+        padding: 15px 40px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: #fff;
+        border-radius: 5px;
+        background-color: #1B75BB;
+    }
 }
