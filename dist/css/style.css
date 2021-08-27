@@ -100,6 +100,10 @@ h6 {
 
 /* 4. About hotel gallery */
 
+/* 5. Reviwes */
+
+/* 5.1 Slick slider */
+
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -544,4 +548,147 @@ body {
 .rooms .text {
   font-family: 'Roboto', sans-serif;
   max-width: 439px;
+}
+
+/* 5. Reviwes */
+
+.reviwes {
+  margin: 140px 0 0 0;
+  padding: 0 0 140px 0;
+}
+
+.reviwes__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 60px 0;
+}
+
+.reviwes__title {
+  font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
+  font-weight: 500;
+  line-height: 45px;
+  margin-bottom: 0;
+}
+
+.reviwes .slide {
+  max-width: 360px;
+  margin: 0 15px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.reviwes .slide:last-child {
+  margin-right: 0;
+}
+
+.reviwes .slide__wrapper {
+  padding: 28px 40px 28px 39px;
+  opacity: 0.6;
+}
+
+.reviwes .slide__quotes {
+  width: 24px;
+  height: 20px;
+  background: url("../../img/quotes.png") no-repeat;
+}
+
+.reviwes .slide__quotes img {
+  height: 20px;
+}
+
+.reviwes .slide__img img {
+  margin: 0 auto;
+}
+
+.reviwes .slide__rew-text {
+  display: inline;
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(14px + 4 * ((100vw - 320px) / 1280));
+  font-weight: 400;
+  line-height: 29px;
+  text-align: center;
+  margin: 0 0 29px 0;
+}
+
+.reviwes .slide__rew-text p {
+  display: inline;
+}
+
+.reviwes .slide__rew-info {
+  margin: 30px 0 0 0;
+}
+
+.reviwes .slide__rew-info h3 {
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 0 5px 0;
+}
+
+.reviwes .slide__rew-info p {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(12px + 2 * ((100vw - 320px) / 1280));
+  font-weight: 400;
+  line-height: 22px;
+}
+
+/* 5.1 Slick slider */
+
+.slick-slider.slick-initialized {
+  position: relative;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+
+.slick-slide.slick-center .slide__wrapper {
+  opacity: 1;
+}
+
+.slick-slide.slick-center .slide__quotes {
+  background: url("../../img/quotes__active.png");
+}
+
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  font-size: 0;
+  width: 20px;
+  height: 20px;
+}
+
+.slick-arrow.slick-prev {
+  left: -30px;
+  border-top: 3px solid rgba(0, 0, 0, 0.438);
+  border-left: 3px solid rgba(0, 0, 0, 0.438);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background: #E5E5E5;
+}
+
+.slick-arrow.slick-next {
+  right: -30px;
+  border-top: 3px solid rgba(0, 0, 0, 0.438);
+  border-right: 3px solid rgba(0, 0, 0, 0.438);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #E5E5E5;
 }

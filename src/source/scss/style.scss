@@ -8,6 +8,8 @@
 /* 2. Preview */
 /* 3. Why you choose us */
 /* 4. About hotel gallery */
+/* 5. Reviwes */
+    /* 5.1 Slick slider */
 /* -------------------------------------------------------------------- */
 
 /* === Common === */
@@ -321,7 +323,7 @@ body {
 /* 4. About hotel gallery */
 
 .rooms {
-    margin: 140px 0 0 0;;
+    margin: 140px 0 0 0;
 
     &__item {
         position: relative;
@@ -349,12 +351,6 @@ body {
         border-radius: 10px;
         width: 100%;
         height: auto;
-    }
-
-    &__preview {
-    }
-
-    &__preview-wrapper {
     }
 
     &__info {
@@ -417,4 +413,183 @@ body {
         font-family: 'Roboto', sans-serif;
         max-width: 439px;
     }
+}
+
+/* 5. Reviwes */
+
+.reviwes {
+    margin: 140px 0 0 0;
+    padding: 0 0 140px 0; //timer
+
+    &__wrapper {
+    }
+
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 0 60px 0;
+    }
+
+    &__title {
+        @include adaptive-font(32, 20);
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 0;
+    }
+
+    &__body {
+    }
+
+    &__slider {
+    }
+
+    .slide {
+        max-width: 360px;
+        margin: 0 15px;
+        text-align: center;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &__wrapper {
+            padding: 28px 40px 28px 39px;
+            opacity: 0.6;
+        }
+
+        &__quotes {
+            width: 24px;
+            height: 20px;
+            background: url('../../img/quotes.png') no-repeat;
+
+            img {
+                height: 20px;
+            }
+        }
+    
+        &__img {
+
+            img {
+                margin: 0 auto;
+            }
+        }
+    
+        &__rew-text {
+            display: inline;
+            font-family: 'Roboto', sans-serif;
+            @include adaptive-font(18, 14);
+            font-weight: 400;
+            line-height: 29px;
+            text-align: center;
+            margin: 0 0 29px 0;
+
+            p {
+                display: inline;
+            }
+        }
+    
+        &__rew-info {
+            margin: 30px 0 0 0;
+
+            h3 {
+                @include adaptive-font(20, 16);
+                font-weight: 500;
+                line-height: 30px;
+                margin: 0 0 5px 0;
+            }
+
+            p {
+                font-family: 'Roboto', sans-serif;
+                @include adaptive-font(14, 12);
+                font-weight: 400;
+                line-height: 22px;
+            }
+        }
+    }    
+}
+
+/* 5.1 Slick slider */
+
+.slick-slider {
+}
+
+.slick-slider.slick-initialized {
+    position: relative;
+}
+
+.slick-slider.slick-dotted {
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    padding: 0;
+}
+
+.slick-slide {
+}
+
+.slick-slide.slick-active {
+}
+
+.slick-slide.slick-current {
+}
+
+.slick-slide.slick-center {
+
+    .slide__wrapper {
+        opacity: 1;
+    }
+
+    .slide__quotes {
+        background: url('../../img/quotes__active.png')
+    }
+}
+
+.slick-slide.slick-cloned {
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.slick-arrow.slick-prev {
+    left: -30px;
+    border-top: 3px solid rgba(0, 0, 0, 0.438);
+    border-left: 3px solid rgba(0, 0, 0, 0.438);
+    transform: rotate(-45deg);
+    background: #E5E5E5;
+}
+
+.slick-arrow.slick-next {
+    right: -30px;
+    border-top: 3px solid rgba(0, 0, 0, 0.438);
+    border-right: 3px solid rgba(0, 0, 0, 0.438);
+    transform: rotate(45deg);
+    background: #E5E5E5;
+}
+
+.slick-arrow.slick-disabled {
+}
+
+.slick-dots {
+}
+
+.slick-dots li {
+}
+
+.slick-dots li.slick-active {
+}
+
+.slick-dots li button {
 }
