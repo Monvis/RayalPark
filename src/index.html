@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body">
 	<div class="wrapper"> 
 	<!-- Header -->
 		<header class="header">
@@ -18,7 +18,7 @@
 				<div class="header__top">
 					<div class="header__top__wrapper">
 						<div class="header__logo">
-							<img src="img/header__logo.png" alt="">
+							<img src="img/logo.png" alt="">
 						</div>
 						<div class="nav">
 							<a class="nav__link" href="#">Home</a>
@@ -28,6 +28,26 @@
 						</div>
 					</div>
 					<a href="#"><div class="btn btn--nav">Book now</div></a>
+					<div class="burger">
+						<a class="burger__btn" href="#">
+							<span class="burger__icon"></span>
+						</a>
+						<div class="burger__window">
+							<a href="#"><div class="btn burger--nav">Book now</div></a>
+							<div class="burger__list">
+								<a class="nav__link" href="#">Home</a>
+								<a class="nav__link" href="#">Features</a>
+								<a class="nav__link" href="#">Gallary</a>
+								<a class="nav__link" href="#">Testimonials</a>
+							</div>
+							<div class="networks__links burger__networks">
+								<a href="https://www.facebook.com/"><img src="img/facebook__icon.png" alt=""></a>
+								<a href="https://www.instagram.com/"><img src="img/instagram__icon.png" alt=""></a>
+								<a href="https://twitter.com/"><img src="img/twitter__icon.png" alt=""></a>
+								<a href="https://www.google.ru/"><img src="img/google__icon.png" alt=""></a>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="header__body">
 					<div class="signature">
@@ -78,10 +98,7 @@
 								<img src="img/video__preview--inner.png" alt="">
 								<div class="video">
 									<div class="video__wrapper">
-										<video class="video__main" src="video/preview__video.mp4" controls poster="img/video__preview--outer.png" style="border-radius: 10px;"></video>
-										<div class="circle" id="circle">
-											<div class="triangle"></div>
-										</div>
+										<video class="video__main" id="video" controls src="video/preview__video.mp4" poster="img/video__preview--outer.png" style="border-radius: 10px;"></video>
 									</div>
 								</div>
 							</div>
@@ -330,6 +347,57 @@
 				</div>
 			</div>
 		</main>
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="footer__column">
+						<div class="logo footer__logo">
+							<img src="img/logo__footer.png" alt="">
+							<p>Travel deals on hotels,<br> flights, vacation packages.</p>
+						</div>
+						<div class="networks footer__networks">
+							<div class="networks__email">
+								<a href="#">@shovasatkhira88.com</a>
+							</div>
+							<div class="networks__links">
+								<a href="https://www.facebook.com/"><img src="img/facebook__icon.png" alt=""></a>
+								<a href="https://www.instagram.com/"><img src="img/instagram__icon.png" alt=""></a>
+								<a href="https://twitter.com/"><img src="img/twitter__icon.png" alt=""></a>
+								<a href="https://www.google.ru/"><img src="img/google__icon.png" alt=""></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h4>Home</h4>
+						<div class="footer__links">
+							<ul>
+								<a href="#"><li>Accessibility</li></a>
+								<a href="#"><li>Lertifiotion</li></a>
+								<a href="#"><li>Knowledge</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h4>Pages</h4>
+						<div class="footer__links">
+							<ul>
+								<a href="#"><li>Blogs</li></a>
+								<a href="#"><li>Careers</li></a>
+								<a href="#"><li>Communing</li></a>
+							</ul>
+						</div>
+					</div>
+					<div class="footer__column">
+						<h4>SUBSCRIBE</h4>
+						<form class="form footer__form" action="#" method="POST">
+							<input class="form__input" type="email" placeholder="Enter your email address">
+							<button class="form__btn" type="button">Subscribe</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</footer>
 	</div>
 	<script src="libs/jquery.min.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
