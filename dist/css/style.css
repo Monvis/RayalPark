@@ -121,6 +121,8 @@ body {
 
 .lock-scroll {
   overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .lock-scroll::after {
@@ -452,66 +454,66 @@ body {
 /* 2. Preview */
 
 .preview {
-  margin: 200px 0 0 0;
+  margin: 250px 0 0 0;
 }
 
-.preview .container {
-  position: relative;
-}
-
-.preview .container .preview__wrapper {
+.preview__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  left: -7%;
 }
 
 .preview__video {
   position: relative;
-  margin: 0 98px 0 0;
-}
-
-.preview__video .background-img {
-  position: relative;
-}
-
-.preview__video .background-img img {
-  margin: 0 0 0 97px;
-}
-
-.preview__video .background-img .video {
-  position: absolute;
-  top: 43px;
-  right: 43px;
+  margin: 0 155px 0 0;
   z-index: 10;
 }
 
-.preview__video .bg__square {
+.preview .video {
+  max-width: 630px;
+  max-height: 325px;
+}
+
+.preview__background .main__bg {
   position: absolute;
-  top: 200px;
-  left: -200px;
-  opacity: 0.5;
+  top: -57px;
+  right: -57px;
+  z-index: -10;
+}
+
+.preview__background .secondary__bg {
+  position: absolute;
+  bottom: -86px;
+  left: -86px;
+  opacity: 0.7;
+  z-index: -10;
 }
 
 .preview__title {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
+  margin: 0 0 15px 0;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1B75BB;
+}
+
+.preview__text {
   font-size: calc(20px + 12 * ((100vw - 320px) / 1280));
-}
-
-.preview .video:hover {
-  cursor: pointer;
-}
-
-.preview .video__wrapper {
-  position: relative;
-}
-
-.preview .video__wrapper .video__main {
-  width: 625px;
-  height: 325px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  margin: 0 0 30px 0;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 0em;
+  white-space: nowrap;
+  text-align: left;
 }
 
 /* 3. Why you choose us */

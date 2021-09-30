@@ -40,3 +40,6 @@ $(function(){
     burger.classList.toggle('burger__active');
     });
 })
+
+// Learning
+
