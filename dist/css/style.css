@@ -454,7 +454,7 @@ body {
 /* 2. Preview */
 
 .preview {
-  margin: 250px 0 0 0;
+  margin: 250px 0 254px 0;
 }
 
 .preview__wrapper {
@@ -465,12 +465,11 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  left: -7%;
 }
 
 .preview__video {
   position: relative;
-  margin: 0 155px 0 0;
+  left: -7%;
   z-index: 10;
 }
 
@@ -512,15 +511,10 @@ body {
   font-weight: 500;
   line-height: 45px;
   letter-spacing: 0em;
-  white-space: nowrap;
   text-align: left;
 }
 
 /* 3. Why you choose us */
-
-.choose {
-  margin: 254px 0 0 0;
-}
 
 .choose__header {
   margin: 0 0 60px 0;
@@ -992,6 +986,51 @@ body {
   margin-right: 0;
 }
 
+@media screen and (max-width: 1280px) {
+  .preview__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: 5%;
+  }
+
+  .preview__video {
+    margin-left: auto;
+    margin-right: 30px;
+  }
+
+  .preview__video .main__bg {
+    top: -47px;
+    right: -47px;
+  }
+
+  .preview__video .secondary__bg {
+    display: none;
+  }
+
+  .preview__info {
+    margin: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .preview {
+    margin: 200px 0 150px 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .preview {
+    margin: 190px 0 140px 0;
+  }
+
+  .preview .video {
+    max-width: 530px;
+    max-height: 273px;
+  }
+}
+
 @media screen and (max-width: 870px) {
   .header .burger {
     display: block;
@@ -1006,5 +1045,123 @@ body {
 @media screen and (max-width: 800px) {
   .header__card {
     display: none;
+  }
+
+  .preview {
+    margin: 190px 0 140px 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .preview .video {
+    max-width: 430px;
+    max-height: 221px;
+  }
+
+  .preview .main__bg {
+    width: 380px;
+    height: 196px;
+  }
+
+  .preview .main__bg img {
+    width: 380px;
+    height: 196px;
+  }
+
+  .preview__title {
+    margin: 0 0 8px 0;
+  }
+
+  .preview__text {
+    margin: 0 0 15px 0;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .btn {
+    padding: 10px 20px;
+  }
+
+  .preview {
+    margin: 150px 0 100px 0;
+  }
+
+  .preview .video {
+    width: 380px;
+    height: 196px;
+  }
+
+  .preview .main__bg {
+    width: 330px;
+    height: 170px;
+    top: -27px;
+    right: -27px;
+  }
+
+  .preview .main__bg img {
+    width: 330px;
+    height: 170px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .preview {
+    margin: 130px 0 80px 0;
+  }
+
+  .preview .video {
+    width: 330px;
+    height: 170px;
+  }
+
+  .preview .main__bg {
+    width: 270px;
+    height: 139px;
+    top: -27px;
+    right: -27px;
+  }
+
+  .preview .main__bg img {
+    width: 270px;
+    height: 139px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .preview .video {
+    width: 300px;
+    height: 154px;
+  }
+
+  .preview .main__bg {
+    width: 240px;
+    height: 123px;
+    top: -27px;
+    right: -27px;
+  }
+
+  .preview .main__bg img {
+    width: 240px;
+    height: 123px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .preview .video {
+    width: 280px;
+    height: 144px;
+  }
+
+  .preview .main__bg {
+    width: 230px;
+    height: 118px;
+    top: -17px;
+    right: -17px;
+  }
+
+  .preview .main__bg img {
+    width: 230px;
+    height: 118px;
   }
 }

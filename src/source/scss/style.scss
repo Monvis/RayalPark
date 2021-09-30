@@ -49,6 +49,13 @@ body {
     padding: 0 20px;
 }
 
+@media screen and (max-width: 580px) {
+
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
 /* 1. Header */
 
 .header {
@@ -347,18 +354,17 @@ body {
 /* 2. Preview */
 
 .preview {
-    margin: 250px 0 0 0;
+    margin: 250px 0 254px 0;
 
     &__wrapper {
         display: flex;
         justify-content: space-between;
         position: relative;
-        left: -7%;
     }
 
     &__video {
         position: relative;
-        margin: 0 155px 0 0;
+        left: -7%;
         z-index: 10;
     }
 
@@ -406,11 +412,162 @@ body {
         font-weight: 500;
         line-height: 45px;
         letter-spacing: 0em;
-        white-space: nowrap;
         text-align: left;
     }
 
     &__btn {
+    }
+
+    @media screen and (max-width: 1280px) {
+
+        &__wrapper {
+            flex-direction: column;
+            left: 5%;
+        }
+        
+        &__video {
+            margin-left: auto;
+            margin-right: 30px;
+
+            .main__bg {
+                top: -47px;
+                right: -47px;
+            }
+
+            .secondary__bg {
+                display: none;    
+            }
+        }
+
+        &__info {
+            margin: 50px 0 0 0;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+        margin: 200px 0 150px 0;
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin: 190px 0 140px 0;
+        
+        .video {
+            max-width: 530px;
+            max-height: 273px;
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        margin: 190px 0 140px 0;
+    }
+
+    @media screen and (max-width: 700px) {
+        
+        .video {
+            max-width: 430px;
+            max-height: 221px;
+        }
+
+        .main__bg {
+            width: 380px;
+            height: 196px;
+
+            img {
+                width: 380px;
+                height: 196px;
+            }
+        }
+
+        &__title {
+            margin: 0 0 8px 0;
+        }
+
+        &__text {
+            margin: 0 0 15px 0;
+            line-height: 40px;
+        }
+    }
+
+    @media screen and (max-width: 580px) {
+        margin: 150px 0 100px 0;
+        
+        .video {
+            width: 380px;
+            height: 196px;
+        }
+
+        .main__bg {
+            width: 330px;
+            height: 170px;
+            top: -27px;
+            right: -27px;
+
+            img {
+                width: 330px;
+                height: 170px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        margin: 130px 0 80px 0;
+
+        .video {
+            width: 330px;
+            height: 170px;
+        }
+
+        .main__bg {
+            width: 270px;
+            height: 139px;
+            top: -27px;
+            right: -27px;
+
+            img {
+                width: 270px;
+                height: 139px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        .video {
+            width: 300px;
+            height: 154px;
+        }
+
+        .main__bg {
+            width: 240px;
+            height: 123px;
+            top: -27px;
+            right: -27px;
+
+            img {
+                width: 240px;
+                height: 123px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+
+        .video {
+            width: 280px;
+            height: 144px;
+        }
+
+        .main__bg {
+            width: 230px;
+            height: 118px;
+            top: -17px;
+            right: -17px;
+
+            img {
+                width: 230px;
+                height: 118px;
+            }
+        }
     }
 }
 
@@ -418,7 +575,6 @@ body {
 /* 3. Why you choose us */
 
 .choose {
-    margin: 254px 0 0 0;
 
     &__header {
         margin: 0 0 60px 0;
