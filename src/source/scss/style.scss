@@ -373,6 +373,7 @@ body {
     .video {
         max-width: 630px;
         max-height: 325px;
+        object-fit: cover;
     }
 
     &__background {
@@ -785,6 +786,73 @@ body {
     .text {
         font-family: 'Roboto', sans-serif;
         max-width: 439px;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        &__info {
+            padding: 16px 23px;
+        }
+
+        &__btn {
+            padding: 7px 15px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        &__wrapper {
+            display: block;
+            margin-bottom: 0;
+
+            .rooms__item {
+                margin: 0 auto 50px;
+                width: 554px;
+                height: auto;
+            }
+        }
+    }
+
+    @media screen and (max-width: 620px) {
+
+        &__wrapper {
+
+            .rooms__item {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__type {
+            margin: 0 15px 0 0;
+        }
+
+        &__info {
+            padding: 12px 19px;
+        }
+    }
+
+    @media screen and (max-width: 400px) {
+
+        &__wrapper {
+
+            &-inner {
+                margin: 0 0 5px 0;
+            }
+
+            .rooms__item {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__info {
+            padding: 10px 15px;
+        }
+
+        &__btn {
+            padding: 7px 15px;
+        }
     }
 }
 

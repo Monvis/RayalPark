@@ -51,7 +51,9 @@ function browserSync(param){
             baseDir: "./" + project_folder + "/"
         },
         port: 3000,
-        notify: false
+        notify: false,
+        online: true,
+        tunnel: true
     })
 }
 
