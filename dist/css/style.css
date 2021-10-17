@@ -904,6 +904,10 @@ body {
   line-height: 45px;
 }
 
+.notify__input {
+  padding: 18.5px 0 18.5px 30px;
+}
+
 .notify__body {
   text-align: center;
 }
@@ -933,7 +937,7 @@ body {
 
 .form__input {
   width: 100%;
-  padding: 18.5px 80px 18.5px 30px;
+  padding: 18.5px 0 18.5px 30px;
   border-radius: 5px;
 }
 
@@ -1174,6 +1178,16 @@ body {
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
   }
+
+  .reviwes__header {
+    max-width: 554px;
+    margin: 0 auto 60px;
+  }
+
+  .notify__header {
+    max-width: 554px;
+    margin: 0 auto 60px;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -1254,6 +1268,12 @@ body {
   }
 }
 
+@media screen and (max-width: 510px) {
+  .notify__btn {
+    padding: 15px 30px;
+  }
+}
+
 @media screen and (max-width: 508px) {
   .choose__body {
     display: block;
@@ -1288,6 +1308,32 @@ body {
   .preview .main__bg img {
     width: 270px;
     height: 139px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .notify__btn {
+    padding: 15px 25px;
+  }
+
+  .notify input::-webkit-input-placeholder {
+    font-size: 13px;
+  }
+
+  .notify input:-moz-placeholder {
+    font-size: 13px;
+  }
+
+  .notify input:-o-placeholder {
+    font-size: 13px;
+  }
+
+  .notify input:-khtml-placeholder {
+    font-size: 13px;
+  }
+
+  .notify input:placeholder {
+    font-size: 13px;
   }
 }
 
@@ -1327,6 +1373,23 @@ body {
   }
 }
 
+@media screen and (max-width: 390px) {
+  .notify__input {
+    padding: 18.5px 0 18.5px 20px;
+  }
+
+  .notify__btn {
+    font-size: 12px;
+    padding: 15px 15px;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  .notify__title {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 360px) {
   .preview .video {
     width: 280px;
@@ -1344,11 +1407,14 @@ body {
     width: 230px;
     height: 118px;
   }
+
+  .notify__input {
+    padding: 18.5px 0 18.5px 10px;
+  }
 }
 
-@media screen and (min-width: 620px) and (max-width: 900px) {
-  .reviwes__header {
-    width: 554px;
-    margin: 0 auto 60px;
+@media screen and (max-width: 335px) {
+  .notify__title {
+    font-size: 17px;
   }
 }
