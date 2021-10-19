@@ -1114,23 +1114,23 @@ body {
         }
 
         input::-webkit-input-placeholder {
-            font-size:13px;
+            font-size: 13px;
         }
 
         input:-moz-placeholder {
-            font-size:13px;
+            font-size: 13px;
         }
 
         input:-o-placeholder {
-            font-size:13px;
+            font-size: 13px;
         }
         
         input:-khtml-placeholder {
-            font-size:13px;
+            font-size: 13px;
         }
     
         input:placeholder {
-            font-size:13px;
+            font-size: 13px;
         }
     }
 
@@ -1239,6 +1239,10 @@ body {
         margin: 30px 0 0 0;
     }
 
+    &__input {
+        padding-right: 98px;
+    }
+
     &__column {
 
         h4 {
@@ -1278,6 +1282,115 @@ body {
 
         &__input {
             font-size: 16px;
+        }
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        &__input {
+            padding-right: 50px;
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        &__input {
+            padding: 18.5px 0 18.5px 20px;
+        }
+
+        &__btn {
+            padding: 15px 20px;
+        }
+
+        input::-webkit-input-placeholder {
+            font-size: 13px;
+        }
+
+        input:-moz-placeholder {
+            font-size: 13px;
+        }
+
+        input:-o-placeholder {
+            font-size: 13px;
+        }
+        
+        input:-khtml-placeholder {
+            font-size: 13px;
+        }
+    
+        input:placeholder {
+            font-size: 13px;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+
+        &__wrapper {
+            justify-content: space-around;
+        }
+
+        .last-column {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+
+        &__logo {
+
+            img {
+                width: 134px;
+                height: 48px;
+            }
+
+            p {
+                font-size: 12.5px;
+            }
+        }
+
+        &__networks {
+
+            .networks__email {
+                margin-top: 15px;
+                font-size: 12.5px;
+            } 
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        &__links a {
+            font-size: 17px;
+        }
+
+        &__column {
+
+            h4 {
+                font-size: 20px;
+            }
+        }
+
+        &__logo p {
+            font-size: 16.7px;
+        }
+
+        .first-column {
+            width: 100%;
+            margin: 0 0 40px 0;
+        }
+    }
+
+    @media screen and (max-width: 360px) {
+
+        &__links a {
+            font-size: 15px;
         }
     }
 }
