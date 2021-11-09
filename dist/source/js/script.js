@@ -30,35 +30,42 @@ $(function(){
 
   // JS //
 
-  //burger
-  const body = document.querySelector('.body');
+  // Variables
+  const body = document.querySelector('body');
+  const preloader = document.getElementById('preloader');
   const burger = document.querySelector('.burger');
+  const video = document.querySelector('.video');
+  const anchors = document.querySelectorAll('a[href*="#"]');
 
+  //preloader
+  window.onload = function() {
+    preloader.classList.add('hide-preloader');
+    setTimeout(function(){
+      preloader.classList.add('preloader-hidden');
+      body.classList.toggle('unlock-scroll');
+    }, 1000);
+  };
+
+  //burger
   burger.addEventListener('click', () => {
   body.classList.toggle('lock-scroll');
   burger.classList.toggle('burger__active');
   });
 
   //video
-  const video1 = document.querySelector('.video');
-
   function videoPausePlayHandler(e) {
     if (e.type == 'playing') {
-      video1.setAttribute("controls","controls");
+      video.setAttribute("controls","controls");
     }
   }
-
-  video1.addEventListener('playing', videoPausePlayHandler, false);
+  video.addEventListener('playing', videoPausePlayHandler, false);
 
   //anchors
-  let anchors = document.querySelectorAll('a[href*="#"]');
-
   for (anchor of anchors) {
     if (anchor) {
       anchor.addEventListener('click', function(e){
           e.preventDefault();
           anchorID = this.getAttribute('href');
-          console.log(anchorID);
           document.querySelector(anchorID).scrollIntoView({
               behavior: 'smooth',
               block: 'start'
@@ -66,5 +73,4 @@ $(function(){
       })
     }
   }
-
 })
