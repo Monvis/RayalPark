@@ -12,17 +12,31 @@
 </head>
 <body class="body">
 
+	<!-- TODO: Исправить проблему с бургером -->
+	<!-- TODO: Исправить проблему с видео -->
+	<!-- TODO: Сделать header липким -->
+	<!-- TODO: К концу работы переделать все z-индексы -->
+
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="loader">
-			<img src="img/preloader.gif" width="40" height="40" alt="">
+			<img src="img/logo.png" alt="">
+			<img src="img/loading.gif" width="40" height="40" alt="">
 		</div>
 	</div>
 
+	<!-- To up -->
+	<a href="#header" class="toUp">
+		<div class="toUp__icon">
+			<span></span>
+		</div>
+	</a>
+
 	<div class="wrapper">
 	<!-- Header -->
-		<header class="header">
+		<header class="header" id="header">
 			<div class="container">
+				<div class="header__plug"></div>
 				<div class="header__top">
 					<div class="header__top__wrapper">
 						<div class="header__logo">
@@ -37,7 +51,7 @@
 					</div>
 					<a href="#rooms"><div class="btn btn--nav">Book now</div></a>
 					<div class="burger">
-						<a class="burger__btn" href="#">
+						<a class="burger__btn" href="#header">
 							<span class="burger__icon"></span>
 						</a>
 						<div class="burger__window">
@@ -100,7 +114,7 @@
 				<div class="container">
 					<div class="preview__wrapper">
 						<div class="preview__video">
-							<video class="video" src="video/preview__video.mp4" onclick="play()" poster="img/video__preview--outer.png" style="border-radius: 10px;"></video>
+							<video class="video" src="video/preview__video.mp4" onclick="play()" preload="none" poster="img/video__preview--outer.png" style="border-radius: 10px;"></video>
 							<div class="preview__background">
 								<div class="main__bg">
 									<img src="img/video__preview--inner.png" alt="">
@@ -190,7 +204,7 @@
 									<div class="text">
 										<p>While some of these examples are real – actually offering guests a stay in the locations advertised – it’s mainly just a way.</p>
 									</div>
-									<a href="#"><div class="btn">View more</div></a>
+									<a href="example_page.html"><div class="btn">View more</div></a>
 								</div>
 							</div>
 							<div class="rooms__item">
