@@ -225,6 +225,13 @@ body {
         }
     }
 
+    &__logo {
+
+        &-active {
+            display: none;
+        }
+    }
+
     &__card {
         position: absolute;
         left: -20px;
@@ -297,7 +304,7 @@ body {
                 &::after {
                     width: 13px;
                     transform: rotate(45deg);
-                    transform-origin: 2px 0px;
+                    transform-origin: 3px 0px;
                     background-color: #1b75bb;
                 }
             }
@@ -461,11 +468,66 @@ body {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100px;
+        height: 80px;
         z-index: 20;
         padding: 0 20px;
         box-shadow: 0px 1px 10px #000;
-        background-color: #eeeded;
+        animation: show_header .4s;
+        background-color: #1b75bb;
+    }
+
+    .header__logo-default {
+        display: none;
+    }
+
+    .header__logo-active {
+        display: block;
+    }
+
+    .btn--nav {
+        border: 1px solid #fff;
+    }
+
+    .header-link {
+        font-family: 'Roboto', sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+
+        &:first-child {
+            color: #fff;
+            border-bottom: 1px solid #fff;
+        }
+    }
+
+    .burger {
+
+        &__btn {
+            border: solid #fff;
+        }
+
+        &__icon {
+            background-color: #fff;
+
+            &::before,
+            &::after {
+                background-color: #fff;
+            }
+        }
+
+        &__active {
+
+        }
+    }
+}
+
+@keyframes show_header {
+    0% {
+        opacity: 0;
+        top: -70px;
+    }
+    100% {
+        opacity: 1;
+        top: 0;
     }
 }
 
@@ -512,7 +574,6 @@ body {
 }
 
 .nav {
-    margin: 0 0 0 128px;
 
     &__link {
         margin: 0 40px 0 0;
@@ -579,7 +640,11 @@ body {
 /* 2. Preview */
 
 .preview {
-    margin: 250px 0 254px 0;
+    margin: 250px 0 0 0;
+
+    .container {
+        padding: 200px 0 0 0;
+    }
 
     &__wrapper {
         display: flex;
@@ -795,6 +860,11 @@ body {
 /* 3. Why you choose us */
 
 .choose {
+    margin: 200px 0 0 0;
+
+    .container {
+        padding: 150px 0 0 0;
+    }
 
     &__header {
         margin: 0 0 60px 0;
@@ -915,6 +985,10 @@ body {
 
 .rooms {
     margin: 140px 0 0 0;
+
+    .container {
+        padding: 150px 0 0 0;
+    }
 
     &__item {
         position: relative;
@@ -1077,6 +1151,10 @@ body {
 
 .reviwes {
     margin: 140px 0 0 0;
+
+    .container {
+        padding: 150px 0 0 0;
+    }
 
     &__header {
         display: flex;
@@ -1291,6 +1369,10 @@ body {
 .notify {
     margin: 140px 0 0 0;
 
+    .container {
+        padding: 150px 0 0 0;
+    }
+
     &__header {
         text-align: center;
     }
@@ -1445,6 +1527,7 @@ body {
 
     .container {
         max-width: 1185px;
+        padding: 100px 0 0 0;
     }
 
     &__wrapper {
