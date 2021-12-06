@@ -10,18 +10,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gelasio:wght@500;600&family=Poppins:wght@400;500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
-<body class="body">
-
-	<!-- TODO: Исправить проблему с бургером -->
+<body class="overflow-hidden">
+	
 	<!-- TODO: Исправить проблему с видео -->
-	<!-- TODO: К концу работы переделать все z-индексы -->
-	<!-- TODO: Настроить подпапочную систему картинок -->
+	<!-- TODO: К концу работы доработать кроссбраузерность -->
 
 	<!-- Preloader -->
 	<div id="preloader">
 		<div id="loader">
-			<img src="img/logo.png" alt="">
-			<img src="img/loading.gif" width="40" height="40" alt="">
+			<img src="img/1_header/logo.png" alt="">
+			<img src="img/preloader/loading.gif" width="40" height="40" alt="">
 		</div>
 	</div>
 
@@ -35,18 +33,18 @@
 	<div class="wrapper">
 	<!-- Header -->
 		<header class="header" id="header">
-			<div class="container">
+			<div class="container" data-aos="fade-zoom-in">
 				<div class="header__plug"></div>
 				<div class="header__top">
 					<div class="header__logo">
-						<img class="header__logo-default" src="img/logo.png">
-						<img class="header__logo-active" src="img/logo-test.png" width="152" height="29">
+						<img class="header__logo-default" src="img/1_header/logo.png">
+						<img class="header__logo-active" src="img/1_header/burger/logo-active.png" width="152" height="29">
 					</div>
 					<nav class="nav">
 						<a class="nav__link header-link" href="#">Home</a>
-						<a class="nav__link header-link" href="example_page.html">Features</a>
-						<a class="nav__link header-link" href="example_page.html">Gallary</a>
-						<a class="nav__link header-link" href="example_page.html">Testimonials</a>
+						<a class="nav__link header-link" href="example-page.html">Features</a>
+						<a class="nav__link header-link" href="example-page.html">Gallary</a>
+						<a class="nav__link header-link" href="example-page.html">Testimonials</a>
 					</nav>
 					<a href="#rooms"><div class="btn btn--nav">Book now</div></a>
 					<div class="burger">
@@ -57,30 +55,32 @@
 							<a href="#rooms"><div class="btn burger--nav">Book now</div></a>
 							<div class="burger__list">
 								<a class="nav__link" href="#">Home</a>
-								<a class="nav__link" href="example_page.html">Features</a>
-								<a class="nav__link" href="example_page.html">Gallary</a>
-								<a class="nav__link" href="example_page.html">Testimonials</a>
+								<a class="nav__link" href="example-page.html">Features</a>
+								<a class="nav__link" href="example-page.html">Gallary</a>
+								<a class="nav__link" href="example-page.html">Testimonials</a>
 							</div>
 							<div class="networks__links burger__networks">
-								<a href="https://www.facebook.com/"><img src="img/facebook__icon.png" alt=""></a>
-								<a href="https://www.instagram.com/"><img src="img/instagram__icon.png" alt=""></a>
-								<a href="https://twitter.com/"><img src="img/twitter__icon.png" alt=""></a>
-								<a href="https://www.google.ru/"><img src="img/google__icon.png" alt=""></a>
+								<a href="https://www.facebook.com/"><img src="img/1_header/burger/facebook.png" alt=""></a>
+								<a href="https://www.instagram.com/"><img src="img/1_header/burger/instagram.png" alt=""></a>
+								<a href="https://twitter.com/"><img src="img/1_header/burger/twitter.png" alt=""></a>
+								<a href="https://www.google.ru/"><img src="img/1_header/burger/google.png" alt=""></a>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="header__body">
-					<div class="signature">
-						<h2>Serenity</h2>
+				<div class="header__body" >
+					<div class="header__body-wrapper">
+						<div class="signature">
+							<h2>Serenity</h2>
+						</div>
+						<div class="title">
+							<h1>Stay with us feel<br> like <span class="title--blue">home</span>.</h1>
+						</div>
+						<div class="text"> 
+							<p>Pet-friendly hotels are becoming<br> increasingly popular; appealing to travellers<br> who can’t bear to be parted.</p>
+						</div>
+						<a href="#preview"><div class="btn">Read more</div></a>
 					</div>
-					<div class="title">
-						<h1>Stay with us feel<br> like <span class="title--blue">home</span>.</h1>
-					</div>
-					<div class="text"> 
-						<p>Pet-friendly hotels are becoming<br> increasingly popular; appealing to travellers<br> who can’t bear to be parted.</p>
-					</div>
-					<a href="#preview"><div class="btn">Read more</div></a>
 				</div>
 				<div class="header__card">
 					<div class="wrapper__inner">
@@ -112,18 +112,18 @@
 			<div class="preview" id="preview">
 				<div class="container">
 					<div class="preview__wrapper">
-						<div class="preview__video">
-							<video class="video" src="video/preview__video.mp4" onclick="play()" preload="none" poster="img/video__preview--outer.png" style="border-radius: 10px;"></video>
+						<div class="preview__video" data-aos="fade-right">
+							<video class="video" src="video/preview__video.mp4" onclick="play()" preload="none" poster="img/2_preview/1.png" style="border-radius: 10px;"></video>
 							<div class="preview__background">
 								<div class="main__bg">
-									<img src="img/video__preview--inner.png" alt="">
+									<img src="img/2_preview/2.png" alt="">
 								</div>
 								<div class="secondary__bg">
-									<img src="img/preview__bg.png" alt="">
+									<img src="img/2_preview/3.png" alt="">
 								</div>
 							</div>
 						</div>
-						<div class="preview__info">
+						<div class="preview__info" data-aos="fade-up">
 							<div class="preview__title">
 								<h2>dream holidays</h2>
 							</div>
@@ -141,7 +141,7 @@
 				<!-- Why you choose us -->
 				<div class="choose" id="choose">
 					<div class="container">
-						<div class="choose__header">
+						<div class="choose__header" data-aos="zoom-in">
 							<div class="title choose__title">
 								<h2>Why you choose us!</h2>
 							</div>
@@ -151,18 +151,18 @@
 						</div>
 						<div class="choose__body">
 							<div class="choose__body-wrapper first-wrapper">
-								<div class="choose__item first-item">
+								<div class="choose__item first-item" data-aos="zoom-in-right">
 									<div class="choose__img">
-										<img src="img/Group.png" alt="">
+										<img src="img/3_choose/1.png" alt="">
 									</div>
 									<div class="choose__info">
 										<h3 class="title size--24">Easy booking</h3>
 										<p class="text text--width">The booking process should include minimal steps.</p>
 									</div>
 								</div>
-								<div class="choose__item">
+								<div class="choose__item" data-aos="zoom-in-left">
 									<div class="choose__img">
-										<img src="img/Group__2.png" alt="">
+										<img src="img/3_choose/2.png" alt="">
 									</div>
 									<div class="choose__info">
 										<h3 class="title size--24">Friendly interface</h3>
@@ -171,18 +171,18 @@
 								</div>
 							</div>
 							<div class="choose__body-wrapper first-wrapper">
-								<div class="choose__item first-item">
+								<div class="choose__item first-item" data-aos="zoom-in-right">
 									<div class="choose__img">
-										<img src="img/Group__3.png" alt="">
+										<img src="img/3_choose/3.png" alt="">
 									</div>
 									<div class="choose__info">
 										<h3 class="title size--24">Responsibility</h3>
 										<p class="text text--width">You should be able to add rooms to your system.</p>
 									</div>
 								</div>
-								<div class="choose__item">
+								<div class="choose__item" data-aos="zoom-in-left">
 									<div class="choose__img">
-										<img src="img/Group__4.png" alt="">
+										<img src="img/3_choose/4.png" alt="">
 									</div>
 									<div class="choose__info">
 										<h3 class="title size--24">Quick order supply</h3>
@@ -197,17 +197,17 @@
 				<div class="rooms" id="rooms">
 					<div class="container">
 						<div class="rooms__wrapper">
-							<div class="rooms__item rooms__preview">
+							<div class="rooms__item rooms__preview" data-aos="fade-up">
 								<div class="rooms__preview-wrapper">
 									<h2 class="title">About hotel gallery</h2>
 									<div class="text">
 										<p>While some of these examples are real – actually offering guests a stay in the locations advertised – it’s mainly just a way.</p>
 									</div>
-									<a href="example_page.html"><div class="btn">View more</div></a>
+									<a href="example-page.html"><div class="btn">View more</div></a>
 								</div>
 							</div>
-							<div class="rooms__item">
-								<img class="rooms__img" src="img/room__1.jpg" alt="">
+							<div class="rooms__item" data-aos="fade-up">
+								<img class="rooms__img" src="img/4_rooms/1.jpg" alt="">
 								<div class="rooms__info">
 									<div class="rooms__wrapper-inner">
 										<div class="rooms__type">
@@ -217,13 +217,13 @@
 											<p>$60 <span>night</span></p>
 										</div>
 									</div>
-									<a href="example_page.html"><div class="btn rooms__btn">Book now</div></a>
+									<a href="example-page.html"><div class="btn rooms__btn">Book now</div></a>
 								</div>
 							</div>
 						</div>
 						<div class="rooms__wrapper">
-							<div class="rooms__item">
-								<img class="rooms__img" src="img/room__2.jpg" alt="">
+							<div class="rooms__item" data-aos="fade-up">
+								<img class="rooms__img" src="img/4_rooms/2.jpg" alt="">
 								<div class="rooms__info">
 									<div class="rooms__wrapper-inner">
 										<div class="rooms__type">
@@ -233,11 +233,11 @@
 											<p>$70 <span>night</span></p>
 										</div>
 									</div>
-									<a href="example_page.html"><div class="btn rooms__btn">Book now</div></a>
+									<a href="example-page.html"><div class="btn rooms__btn">Book now</div></a>
 								</div>
 							</div>
-							<div class="rooms__item">
-								<img class="rooms__img" src="img/room__3.jpg" alt="">
+							<div class="rooms__item" data-aos="fade-up">
+								<img class="rooms__img" src="img/4_rooms/3.jpg" alt="">
 								<div class="rooms__info">
 									<div class="rooms__wrapper-inner">
 										<div class="rooms__type">
@@ -247,13 +247,13 @@
 											<p>$65 <span>night</span></p>
 										</div>
 									</div>
-									<a href="example_page.html"><div class="btn rooms__btn">Book now</div></a>
+									<a href="example-page.html"><div class="btn rooms__btn">Book now</div></a>
 								</div>
 							</div>
 						</div>
 						<div class="rooms__wrapper">
-							<div class="rooms__item">
-								<img class="rooms__img" src="img/room__4.jpg" alt="">
+							<div class="rooms__item" data-aos="fade-up">
+								<img class="rooms__img" src="img/4_rooms/4.jpg" alt="">
 								<div class="rooms__info">
 									<div class="rooms__wrapper-inner">
 										<div class="rooms__type">
@@ -263,11 +263,11 @@
 											<p>$55 <span>night</span></p>
 										</div>
 									</div>
-									<a href="example_page.html"><div class="btn rooms__btn">Book now</div></a>
+									<a href="example-page.html"><div class="btn rooms__btn">Book now</div></a>
 								</div>
 							</div>
-							<div class="rooms__item">
-								<img class="rooms__img" src="img/room__5.jpg" alt="">
+							<div class="rooms__item" data-aos="fade-up">
+								<img class="rooms__img" src="img/4_rooms/5.jpg" alt="">
 								<div class="rooms__info">
 									<div class="rooms__wrapper-inner">
 										<div class="rooms__type">
@@ -277,28 +277,28 @@
 											<p>$65 <span>night</span></p>
 										</div>
 									</div>
-									<a href="example_page.html"><div class="btn rooms__btn">Book now</div></a>
+									<a href="example-page.html"><div class="btn rooms__btn">Book now</div></a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- Reviwes-->
-				<div class="reviwes">
+				<div class="reviwes" style="overflow: hidden;">
 					<div class="container">
 						<div class="reviwes__wrapper">
-							<div class="reviwes__header">
+							<div class="reviwes__header" data-aos="fade-right">
 								<div class="title reviwes__title">
 									<h2>What our client say</h2>
 								</div>
-								<a href="example_page.html"><div class="btn">View All</div></a>
+								<a href="example-page.html"><div class="btn">View All</div></a>
 							</div>
-							<div class="reviwes__body">
+							<div class="reviwes__body" data-aos="zoom-out-up">
 								<div class="reviwes__slider">
 									<div class="slide">
 										<div class="slide__wrapper">
 											<div class="slide__img">
-												<img src="img/rew__1.png" alt="">
+												<img src="img/5_reviews/1.png" alt="">
 											</div>
 											<div class="slide__quotes"></div>
 											<div class="slide__rew-text">
@@ -313,7 +313,7 @@
 									<div class="slide">
 										<div class="slide__wrapper">
 											<div class="slide__img">
-												<img src="img/rew__2.png" alt="">
+												<img src="img/5_reviews/2.png" alt="">
 											</div>
 											<div class="slide__quotes"></div>
 											<div class="slide__rew-text">
@@ -328,7 +328,7 @@
 									<div class="slide">
 										<div class="slide__wrapper">
 											<div class="slide__img">
-												<img src="img/rew__3.png" alt="">
+												<img src="img/5_reviews/3.png" alt="">
 											</div>
 											<div class="slide__quotes"></div>
 											<div class="slide__rew-text">
@@ -343,7 +343,7 @@
 									<div class="slide">
 										<div class="slide__wrapper">
 											<div class="slide__img">
-												<img src="img/rew__2.png" alt="">
+												<img src="img/5_reviews/2.png" alt="">
 											</div>
 											<div class="slide__quotes"></div>
 											<div class="slide__rew-text">
@@ -364,11 +364,11 @@
 				<div class="notify">
 					<div class="container">
 						<div class="notify__wrapper">
-							<div class="notify__header">
+							<div class="notify__header" data-aos="zoom-in">
 								<h4 class="title secondary--title">STAY IN TOUCH</h4>
 								<h3 class="title notify__title main--title">Join our email. First to know about specials,events and more!</h3>
 							</div>
-							<div class="notify__body">
+							<div class="notify__body" data-aos="fade-right">
 								<form class="form" action="#" method="POST">
 									<input class="form__input notify__input" type="email" placeholder="Enter your email adress">
 									<button class="form__btn notify__btn" type="button">Subscribe</button>
@@ -383,9 +383,9 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="footer__wrapper">
-					<div class="footer__column first-column">
+					<div class="footer__column first-column" data-aos="flip-left">
 						<div class="logo footer__logo">
-							<img src="img/logo__footer.png" alt="">
+							<img src="img/7_footer/logo-footer.png" alt="">
 							<p>Travel deals on hotels,<br> flights, vacation packages.</p>
 						</div>
 						<div class="networks footer__networks">
@@ -393,30 +393,30 @@
 								<a href="#">@shovasatkhira88.com</a>
 							</div>
 							<div class="networks__links">
-								<a href="https://www.facebook.com/"><img src="img/facebook__icon.png" alt=""></a>
-								<a href="https://www.instagram.com/"><img src="img/instagram__icon.png" alt=""></a>
-								<a href="https://twitter.com/"><img src="img/twitter__icon.png" alt=""></a>
-								<a href="https://www.google.ru/"><img src="img/google__icon.png" alt=""></a>
+								<a href="https://www.facebook.com/"><img src="img/1_header/burger/facebook.png" alt=""></a>
+								<a href="https://www.instagram.com/"><img src="img/1_header/burger/instagram.png" alt=""></a>
+								<a href="https://twitter.com/"><img src="img/1_header/burger/twitter.png" alt=""></a>
+								<a href="https://www.google.ru/"><img src="img/1_header/burger/google.png" alt=""></a>
 							</div>
 						</div>
 					</div>
-					<div class="footer__column">
+					<div class="footer__column" data-aos="zoom-in">
 						<h4>Home</h4>
 						<div class="footer__links">
-							<a href="example_page.html">Accessibility</a>
-							<a href="example_page.html">Lertifiotion</a>
-							<a href="example_page.html">Knowledge</a>
+							<a href="example-page.html">Accessibility</a>
+							<a href="example-page.html">Lertifiotion</a>
+							<a href="example-page.html">Knowledge</a>
 						</div>
 					</div>
-					<div class="footer__column">
+					<div class="footer__column" data-aos="zoom-in">
 						<h4>Pages</h4>
 						<div class="footer__links">
-							<a href="example_page.html">Blogs</a>
-							<a href="example_page.html">Careers</a>
-							<a href="example_page.html">Communing</a>
+							<a href="example-page.html">Blogs</a>
+							<a href="example-page.html">Careers</a>
+							<a href="example-page.html">Communing</a>
 						</div>
 					</div>
-					<div class="footer__column last-column">
+					<div class="footer__column last-column" data-aos="zoom-in">
 						<h4>SUBSCRIBE</h4>
 						<form class="form footer__form" action="#" method="POST">
 							<input class="form__input footer__input" type="email" placeholder="Enter your email address">
@@ -427,7 +427,8 @@
 			</div>
 		</footer>
 	</div>
-	<script src="libs/jquery.min.js"></script>
+	<script src="libs/jquery/jquery.min.js"></script>
+	<script src="libs/aos/aos.js"></script>
 	<script src="libs/slick/slick.min.js"></script>
 	<script src="source/js/script.min.js"></script>
 </body>

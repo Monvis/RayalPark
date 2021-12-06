@@ -1,5 +1,6 @@
 @import 'null';
 @import 'variables';
+@import 'animate-aos';
 
 /* Code navigation */
 
@@ -13,6 +14,7 @@
 /* 3. Why you choose us */
 /* 4. About hotel gallery */
 /* 5. Reviwes */
+/* ├── 5.1 Slick slider options */
 /* 6. Notify */
 /* 7. Footer */
 /* -------------------------------------------------------------------- */
@@ -40,6 +42,13 @@ $maxWidth: ( 1600 );
 body {
     font-family: 'Gelasio', serif;
     background: #eeeded;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.overflow-hidden {
     overflow: hidden;
 }
 
@@ -59,12 +68,6 @@ body {
         transition: .4s;
         background: rgba(0, 0, 0, 0.438);
     }
-}
-
-.unlock-scroll {
-    overflow: visible;
-    width: 100%;
-    height: 100%;
 }
 
 .container {
@@ -125,7 +128,7 @@ body {
     width: 0;
     height: 0;
     border-radius: 50%;
-    z-index: 50;
+    z-index: 15;
     opacity: 0;
     transition: .4s;
     background-color: #1b75bb;
@@ -195,18 +198,19 @@ body {
 /* 1. Header */
 
 .header {
-    background: url(../../img/header__bg.jpg) no-repeat;
+    background: url(../../img/1_header/backgrond.jpg) no-repeat;
     width: 100%;
-    height: 100%;
+    min-height: 680px;
+    height: 100vh;
     background-size: cover;
     background-position-x: center;
 
     .container {
         position: relative;
+        height: 100%;
     }
 
     &__top {
-        margin: 0 0 78px 0;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -219,9 +223,12 @@ body {
     }
 
     &__body {
+        height: 100%;
 
-        .btn {
-            margin: 0 0 97px 0;
+        &-wrapper {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
 
@@ -235,7 +242,7 @@ body {
     &__card {
         position: absolute;
         left: -20px;
-        bottom: -55px;
+        bottom: -50px;
         display: inline-block;
         background: rgba(255, 255, 255, 0.21);
         backdrop-filter: blur(70px);
@@ -374,7 +381,7 @@ body {
         }
 
         &--nav {
-            margin: 40px 0 0 35px;
+            margin: 35px 0 0 35px;
             opacity: 0;
         }
     }
@@ -514,8 +521,24 @@ body {
             }
         }
 
+        &__window {
+            top: 80px;
+        }
+
+        &--nav {
+            margin: 50px 0 0 35px;
+        }
+
         &__active {
 
+            .burger__icon {
+                background-color: #fff;
+
+                &::before,
+                &::after {
+                    background-color: #fff;
+                }
+            }
         }
     }
 }
@@ -643,7 +666,7 @@ body {
     margin: 250px 0 0 0;
 
     .container {
-        padding: 200px 0 0 0;
+        padding-top: 200px;
     }
 
     &__wrapper {
@@ -655,7 +678,6 @@ body {
     &__video {
         position: relative;
         left: -7%;
-        z-index: 10;
     }
 
     .video {
@@ -703,6 +725,17 @@ body {
         text-align: left;
     }
 
+    @media screen and (min-width: 1500px) {
+
+        &__title {
+            font-size: 19.6875px;
+        }
+
+        &__text {
+            font-size: 31.0625px;
+        }
+    }
+
     @media screen and (max-width: 1280px) {
 
         &__wrapper {
@@ -726,6 +759,13 @@ body {
 
         &__info {
             margin: 50px 0 0 0;
+        }
+    }
+
+    @media screen and (min-width: 500px) and (max-width: 1210px) {
+
+        &__wrapper {
+            left: 0;
         }
     }
 
@@ -863,7 +903,7 @@ body {
     margin: 200px 0 0 0;
 
     .container {
-        padding: 150px 0 0 0;
+        padding-top: 150px;
     }
 
     &__header {
@@ -987,7 +1027,7 @@ body {
     margin: 140px 0 0 0;
 
     .container {
-        padding: 150px 0 0 0;
+        padding-top: 150px;
     }
 
     &__item {
@@ -1153,7 +1193,7 @@ body {
     margin: 140px 0 0 0;
 
     .container {
-        padding: 150px 0 0 0;
+        padding-top: 150px;
     }
 
     &__header {
@@ -1189,7 +1229,7 @@ body {
         &__quotes {
             width: 24px;
             height: 20px;
-            background: url('../../img/quotes.png') no-repeat;
+            background: url('../../img/5_reviews/quotes.png') no-repeat;
 
             img {
                 height: 20px;
@@ -1271,7 +1311,7 @@ body {
     }
 }
 
-/* 5.1 Slick slider */
+/* 5.1 Slick slider options */
 
 .slick-slider.slick-initialized {
     position: relative;
@@ -1307,7 +1347,7 @@ body {
     }
 
     .slide__quotes {
-        background: url('../../img/quotes__active.png')
+        background: url('../../img/5_reviews/quotes-active.png')
     }
 }
 
@@ -1370,7 +1410,7 @@ body {
     margin: 140px 0 0 0;
 
     .container {
-        padding: 150px 0 0 0;
+        padding-top: 150px;
     }
 
     &__header {
@@ -1527,7 +1567,7 @@ body {
 
     .container {
         max-width: 1185px;
-        padding: 100px 0 0 0;
+        padding-top: 100px;
     }
 
     &__wrapper {

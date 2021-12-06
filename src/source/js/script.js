@@ -54,9 +54,10 @@ $(function(){
   });
 
   // JS //
-
+  
   //  Variables
   const body = document.querySelector('body');
+  const wrapper = document.querySelector('wrapper');
   const preloader = document.getElementById('preloader');
   const burger = document.querySelector('.burger');
   const video = document.querySelector('.video');
@@ -67,8 +68,12 @@ $(function(){
     preloader.classList.add('hide-preloader');
     setTimeout(function(){
       preloader.classList.add('preloader-hidden');
-      body.classList.toggle('unlock-scroll');
+      //AOS
+      AOS.init();
     }, 1000);
+    if (!preloader.classList.contains('preloader-hidden')){
+      body.classList.remove('overflow-hidden');
+    }
   };
 
   //burger
