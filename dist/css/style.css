@@ -1917,6 +1917,17 @@ body {
 .header .container {
   position: relative;
   height: 100%;
+  opacity: 0;
+  -webkit-transition: .8s ease;
+  -o-transition: .8s ease;
+  transition: .8s ease;
+  -webkit-transition-delay: .8s;
+       -o-transition-delay: .8s;
+          transition-delay: .8s;
+}
+
+.header .visible-content {
+  opacity: 1;
 }
 
 .header__top {
@@ -2726,6 +2737,10 @@ body {
   margin-right: -15px;
 }
 
+.slide__quotes {
+  background: url("../../img/5_reviews/quotes.png");
+}
+
 .slick-slide.slick-center .slide {
   -webkit-transition: .6s;
   -o-transition: .6s;
@@ -3320,6 +3335,24 @@ body {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .rooms__wrapper-inner {
+    margin: 0;
+  }
+
+  .rooms__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: static;
+    padding: 20px 15px;
+    border-radius: 0 0 10px 10px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .preview {
     margin: 130px 0 80px 0;
@@ -3464,17 +3497,9 @@ body {
     height: 123px;
   }
 
-  .rooms__wrapper-inner {
-    margin: 0 0 5px 0;
-  }
-
   .rooms__wrapper .rooms__item {
     width: 100%;
     height: auto;
-  }
-
-  .rooms__info {
-    padding: 10px 15px;
   }
 
   .rooms__btn {

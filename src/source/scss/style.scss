@@ -208,6 +208,13 @@ body {
     .container {
         position: relative;
         height: 100%;
+        opacity: 0;
+        transition: .8s ease;
+        transition-delay: .8s;
+    }
+
+    .visible-content {
+        opacity: 1;
     }
 
     &__top {
@@ -1163,22 +1170,29 @@ body {
         }
     }
 
+    @media screen and (max-width: 480px) {
+
+        &__wrapper-inner {
+            margin: 0;
+        }
+
+        &__info {
+            display: flex;
+            justify-content: space-between;
+            position: static;
+            padding: 20px 15px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
     @media screen and (max-width: 400px) {
 
         &__wrapper {
-
-            &-inner {
-                margin: 0 0 5px 0;
-            }
 
             .rooms__item {
                 width: 100%;
                 height: auto;
             }
-        }
-
-        &__info {
-            padding: 10px 15px;
         }
 
         &__btn {
@@ -1333,6 +1347,10 @@ body {
 .slick-list {
     margin-left: -15px;
     margin-right: -15px;
+}
+
+.slide__quotes {
+    background: url('../../img/5_reviews/quotes.png');
 }
 
 .slick-slide.slick-center {

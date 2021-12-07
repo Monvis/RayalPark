@@ -57,7 +57,7 @@ $(function(){
   
   //  Variables
   const body = document.querySelector('body');
-  const wrapper = document.querySelector('wrapper');
+  const container = document.getElementById('container');
   const preloader = document.getElementById('preloader');
   const burger = document.querySelector('.burger');
   const video = document.querySelector('.video');
@@ -74,13 +74,14 @@ $(function(){
     if (!preloader.classList.contains('preloader-hidden')){
       body.classList.remove('overflow-hidden');
     }
+    container.classList.add('visible-content');
   };
 
   //burger
-  burger.addEventListener('click', () => {
+  burger.onclick = function() {
     body.classList.toggle('lock-scroll');
     burger.classList.toggle('burger__active');
-  });
+  };
 
   //video
   function videoPausePlayHandler(e) {
